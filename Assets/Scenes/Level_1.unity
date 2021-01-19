@@ -217,6 +217,12 @@ Transform:
   m_Father: {fileID: 346226807}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &300574251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8198354631240295488, guid: 18f761c11fb90cc0984d81738e9a066f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8198354630545999884}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &338304336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1297,6 +1303,12 @@ Transform:
   m_Father: {fileID: 346226807}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1969284903 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4273669716282748634, guid: 18f761c11fb90cc0984d81738e9a066f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8198354630545999884}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1999978126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1529,11 +1541,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 963194228}
     m_Modifications:
+    - target: {fileID: 4273669716282748634, guid: 18f761c11fb90cc0984d81738e9a066f,
+        type: 3}
+      propertyPath: m_Name
+      value: Gun Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 4273669716282748634, guid: 18f761c11fb90cc0984d81738e9a066f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8198211138521933459, guid: 18f761c11fb90cc0984d81738e9a066f,
         type: 3}
       propertyPath: m_Name
       value: X_Wing
       objectReference: {fileID: 0}
+    - target: {fileID: 8198354631240295488, guid: 18f761c11fb90cc0984d81738e9a066f,
+        type: 3}
+      propertyPath: m_Name
+      value: Gun Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 8198354631240295488, guid: 18f761c11fb90cc0984d81738e9a066f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8198354632215768185, guid: 18f761c11fb90cc0984d81738e9a066f,
+        type: 3}
+      propertyPath: guns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8198354632215768185, guid: 18f761c11fb90cc0984d81738e9a066f,
+        type: 3}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 1969284903}
+    - target: {fileID: 8198354632215768185, guid: 18f761c11fb90cc0984d81738e9a066f,
+        type: 3}
+      propertyPath: guns.Array.data[1]
+      value: 
+      objectReference: {fileID: 300574251}
     - target: {fileID: 8198906359192283109, guid: 18f761c11fb90cc0984d81738e9a066f,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private GameObject deathFX;
 
     [SerializeField] private Transform parent;
+    [SerializeField] private int hits = 5;
 
     private ScoreBoard m_ScoreBoard;
     // Start is called before the first frame update
@@ -26,7 +27,22 @@ public class Enemy : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
+        ProcessHit();
+        if (hits <= 0)
+        {
+            KillEnemy();
+        }
+    }
+
+    private void ProcessHit()
+    {
         m_ScoreBoard.ScoreHit(scorePerHit);
+        hits--;
+        // todo consider hit FX
+    }
+
+    private void KillEnemy()
+    {
         var fx = Instantiate(deathFX, transform.position, Quaternion.identity);
         fx.transform.parent = parent;
         Destroy(gameObject);
